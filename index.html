@@ -1,0 +1,58 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Management</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Management</h1>
+
+    <div class="filter-section">
+
+    
+
+      <select id="profession">
+
+        <option class="r" value="">Select Profession</option>
+        <option class="r" value="developer">Developer</option>
+        <option class="r" value="admin">Admin</option>
+      </select>
+      
+    </div>
+    <div class="user-list" id="userList">
+
+    </div>
+    <button onclick="filterCards()">Filter</button>
+
+   <div class="title">
+    <p>Add New User</p>
+   </div>
+    <div class="add-user-section">
+      
+    <div class="element">
+      <p>Enter Name</p>
+      <div>
+      <input type="text" id="name" placeholder="Name">
+    </div>
+</div>
+<div class="element">
+      <p>Enter Age</p>
+      <div>
+      <input type="text" id="age" placeholder="Age">
+    </div>
+</div>
+<div class="element">
+      <p>Enter Profession</p>
+      <div>
+      <input type="text" id="newProfession" placeholder="Profession">
+    </div>
+    </div>
+    </div>
+    <button onclick="addUser()">Add</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
